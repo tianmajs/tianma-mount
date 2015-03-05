@@ -1,8 +1,6 @@
 # tianma-mount
 
-	[![NPM version][npm-image]][npm-url]
-	[![build status][travis-image]][travis-url]
-	[![Test coverage][coveralls-image]][coveralls-url]
+![build status](https://travis-ci.org/tianmajs/tianma-mount.svg?branch=master)
 
 在给定域名或路径上使用中间件。
 
