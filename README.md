@@ -1,6 +1,8 @@
 # tianma-mount
 
-[![build status][travis-image]][travis-url]
+	[![NPM version][npm-image]][npm-url]
+	[![build status][travis-image]][travis-url]
+	[![Test coverage][coveralls-image]][coveralls-url]
 
 在给定域名或路径上使用中间件。
 
