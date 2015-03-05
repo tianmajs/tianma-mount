@@ -1,5 +1,7 @@
 # tianma-mount
 
+[![build status][travis-image]][travis-url]
+
 在给定域名或路径上使用中间件。
 
 ## 安装
