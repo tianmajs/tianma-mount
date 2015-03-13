@@ -12,7 +12,9 @@
 
 ### 挂载域名
 
-	tianma()
+    var tianma = require('tianma');
+
+	tianma(8080)
 		.mount('localhost').then
 			.use(middleware)
 			.end
@@ -25,7 +27,9 @@
 			
 ### 挂载路径
 
-	tianma()
+    var tianma = require('tianma');
+    
+	tianma(8080)
 		.mount('/foo').then
 			.use(middleware)
 			.end
@@ -38,7 +42,9 @@
 			
 ### 挂载域名加路径
 
-	tianma()
+    var tianma = require('tianma');
+    
+	tianma(8080)
 		.mount('localhost').then
 			.mount('/foo').then
 				.use(middleware)
@@ -58,7 +64,9 @@
 
 请求路径与挂载路径匹配时，`request.pathname`中的挂载部分会被切除，切除掉的部分可通过`request.base`访问。
 
-	tianma()
+    var tianma = require('tianma');
+
+	tianma(8080)
 		.use(function *(next) {
 			this.request.url('/foo/bar');
 		})
