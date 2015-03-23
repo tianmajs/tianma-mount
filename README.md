@@ -82,6 +82,20 @@
 				this.request.pathname; // => "/bar"
 			})
 			.end
+            
+### 候选规则
+
+可以使用参数风格或数组风格配置多个挂载规则，按添加顺序匹配和生效。
+
+    var tianma = require('tianma');
+
+	tianma(8080)
+		.mount('localhost', 'www.example.com').then
+			.use(middleware)
+			.end
+		.mount([ '/foo', '/bar' ]).then
+			.use(middleware)
+			.end;
 
 ## 授权协议
 

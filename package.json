@@ -1,7 +1,7 @@
 {
     "name": "tianma-mount",
     "description": "Mount pipeline to a given hostname or pathname",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": "Nanqiao Deng <nqdeng@gmail.com>",
     "keywords": [
         "mount",
